@@ -1,0 +1,12 @@
+# 基本情報
+- file: 'employee_base_info'
+  columns:
+    - { name: 'employee_id', mapping: null }
+    - { name: 'employee_cd', mapping: [ file: 'data.csv', column: 'PERNR' ] }
+    - { name: 'employee_cd2', mapping: null }
+
+- file: 'employee_address'
+  columns:
+    - { name: 'employee_cd', mapping: [ file: 'data.csv', column: 'PERNR' ] }
+    - { name: 'working_location', mapping: null }
+    - { name: 'working_mobile_tel_no', mapping: [ file: 'data.csv', column: 'SPRPS' ] }
